@@ -1,12 +1,12 @@
 {
-  "name": "reference-instance",
+  "name": "greenkeeper-keeper",
   "license": "MIT",
   "private": true,
-  "author": "Matt Travi",
-  "description": "an instance of a greenkeeper-keeper service that should serve as a good reference implementation",
-  "repository": "greenkeeper-keeper/reference-instance",
-  "bugs": "https://github.com/greenkeeper-keeper/reference-instance/issues",
-  "homepage": "https://github.com/greenkeeper-keeper/reference-instance#readme",
+  "author": "Trevor Richardson",
+  "description": "an instance of a greenkeeper-keeper service",
+  "repository": "trevtrich/greenkeeper-keeper",
+  "bugs": "https://github.com/trevtrich/greenkeeper-keeper/issues",
+  "homepage": "https://github.com/trevtrich/greenkeeper-keeper#readme",
   "scripts": {
     "lint:md": "globstar --node -- markdownlint **/*.md",
     "tests:integration": "cucumber-js test/integration --require-module babel-register --tags 'not @wip'",

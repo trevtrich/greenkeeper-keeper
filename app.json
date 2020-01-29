@@ -1,6 +1,6 @@
 {
-  "name": "greenkeeper-keeper",
-  "description": "A reference instance of greenkeeper-keeper",
-  "repository": "https://github.com/greenkeeper-keeper/reference-instance",
+  "name": "greenkeeper-keeper-trevtrich",
+  "description": "An instance of greenkeeper-keeper",
+  "repository": "https://github.com/trevtrich/greenkeeper-keeper",
   "keywords": ["node", "hapi", "greenkeeper-keeper", "greenkeeper", "github", "webhooks"]
 }

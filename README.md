@@ -1,16 +1,13 @@
-# reference-instance
+# greenkeeper-keeper
 
 an [instance of a greenkeeper-keeper service](https://github.com/greenkeeper-keeper/meta#instance-deployment-options)
-that can either be deployed as is to your preferred host or used as a
-reference for creating your own custom instance
 
-[![license](https://img.shields.io/github/license/greenkeeper-keeper/reference-instance.svg)](LICENSE)
+[![license](https://img.shields.io/github/license/trevtrich/greenkeeper-keeper.svg)](LICENSE)
 
-[![Build Status](https://img.shields.io/travis/greenkeeper-keeper/reference-instance.svg?style=flat&branch=master)](https://travis-ci.org/greenkeeper-keeper/reference-instance)
-[![Docker Build Status](https://img.shields.io/docker/build/greenkeeperkeeper/reference-instance.svg)](https://hub.docker.com/r/greenkeeperkeeper/reference-instance/builds/)
+[![Build Status](https://img.shields.io/travis/trevtrich/greenkeeper-keeper.svg?style=flat&branch=master)](https://travis-ci.org/trevtrich/greenkeeper-keeper)
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-![greenkeeper badge](https://badges.greenkeeper.io/greenkeeper-keeper/reference-instance.svg)
+![greenkeeper badge](https://badges.greenkeeper.io/trevtrich/greenkeeper-keeper.svg)
 
 ## Configuration
 
@@ -35,7 +32,7 @@ and are defined in [`.env.example`](./.env.example)
 
 ## Tagging strategy
 
-Since this instance is intended as a reference instance of a [hapi](https://hapijs.com/)
+Since this instance is an instance of a [hapi](https://hapijs.com/)
 server using the [hapi-greenkeeper-keeper](https://github.com/greenkeeper-keeper/hapi-greenkeeper-keeper)
 plugin, the instance is versions solely based on the version of the plugin. Each
 time a new version of the plugin is this repo is tagged with that version.
@@ -48,25 +45,9 @@ this reference only as a guide for creating your server.
 
 ## Deployment
 
-### Docker
-
-[![Docker Pulls](https://img.shields.io/docker/pulls/greenkeeperkeeper/reference-instance.svg)](https://hub.docker.com/r/greenkeeperkeeper/reference-instance/)
-[![Latest Docker Image](https://images.microbadger.com/badges/version/greenkeeperkeeper/reference-instance.svg)](https://microbadger.com/images/greenkeeperkeeper/reference-instance)
-[![Commit of Docker Image](https://images.microbadger.com/badges/commit/greenkeeperkeeper/reference-instance.svg)](https://microbadger.com/images/greenkeeperkeeper/reference-instance)
-[![Docker Images Layers](https://images.microbadger.com/badges/image/greenkeeperkeeper/reference-instance.svg)](https://microbadger.com/images/greenkeeperkeeper/reference-instance)
-
-#### Versioning strategy
-
-Docker tags use the same versioning strategy as is outlined above for git tags.
-Each git tag results in a tagged image.
-
 ### Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 Since build steps have to happen on the heroku side, ensure that the `devDependencies`
 are installed there by setting `NPM_CONFIG_PRODUCTION=false`
-
-### Zeit now
-
-[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/greenkeeperkeeper/reference-instance&env=GITHUB_TOKEN&env=GITHUB_WEBHOOK_SECRET)
