@@ -1,6 +1,8 @@
 language: node_js
 notifications:
   email: false
+import:
+  - source: trevtrich/.travis-ci:github-token-env.yml
 before_script: npm ls --production >/dev/null
 branches:
   except:
@@ -13,6 +15,3 @@ deploy:
   on:
     repo: trevtrich/greenkeeper-keeper
 after_success: ./scripts/tag.sh
-env:
-  global:
-    secure: Isljp/xqMfXv5rWh1jM6orlWffBjUlV0yI35w7VEUD9AiVJQ0ygCI55au9a982UWfhT6yNrZeN+zokh8SzG/9KYtPAB07GmTqz/pFGGPdeoIMhPYeBX9iW3rEwKTn9/Q4gGADm6AY3ZEbhR1xeS9ZhsGVk3Ih2vJDlJ+nbUEUc7irMBwXdV+bKIO150Mm7Z2f7OUER5Y8l+Z5dw+OFsTXvhBQ1HXa0TxKM3Iult3a/Vysq7ZC77seCUKDBVXBjnX+tkCS9+dX3Pfuh8GNSDycj6mu/+3f8bwRYkJxEAxJhmtN88yAFCSYWxeLIdekYGf34lzxRP4zBnW3kS7WUaJQ3RuUBW50C6EHDvkMLVlbtghImBeXCiqLxPxtpbn5vaqvyGaoIUqV2Qom6L9zEsd/W0MlQnqaIjD8efAaHzQB8+mot2xW0Ymz45DS0GMpkRLCzzlVUb5dI1zgdNvxBQc5DfL8x+Md+9RGGYOWETf7APJ7xxhGDCzkbHhjH1L8hgQjSfi0vl0UhE5q+KJZGwpI/1XbNoP8kjz2i+yNeXcWOz2rt9XQhIar46wqOCDo5TEN5HEvOGj6YmkqrJuKMPxfkI1EaM3JgdtGCzZrDQpo/f6LHkZE5lQL7ITx5XfcLOacaH9FTF8V+aBfL8rf6Xg6dBKosAi3YUqX6Sl6NGVz1k=
